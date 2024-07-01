@@ -8,7 +8,10 @@ function Product({value}) {
             <h1 className='text-6xl capitalize font-semibold'>{value.title}</h1>
             <div className='dets w-1/3'>
                  <p className='mb-10'>{value.description}</p>
-                 <Button/>
+                  <div className='flex items-center gap-10'>
+                  {value.live && <Button/>}
+                  {value.case && <Button title='Case Study'/>}
+                  </div>
             </div>
          </div>
     </div>

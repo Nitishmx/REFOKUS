@@ -3,6 +3,7 @@ import NavBar from './Component/NavBar'
 import Works from './Component/Works'
 import Stripes from './Component/Stripes'
 import Products from './Component/Products'
+import Marqueens from './Component/Marqueens'
 
 function App() {
   return (
@@ -11,6 +12,7 @@ function App() {
      <Works/>
      <Stripes/>
      <Products/>
+     <Marqueens/>
     </div>
   )
 }

@@ -1,6 +1,7 @@
 import React from 'react'
 import Stripe from './Stripe'
 
+
 function Stripes() {
     let data=[
         {url:"https://cdn.prod.website-files.com/6334198f239547d0f9cd84b3/63d6e83420934a94d642103b_NCC2021_LogoLockup%201.svg",number:48},
@@ -14,7 +15,13 @@ function Stripes() {
     <div className="flex ml-[-2px] items-center mt-[60px]">
     {data.map((item,index)=>{
         return(
+          <>
+
         <Stripe item={item} key={index}/>
+        
+       
+        
+          </>
 
         )
     })}
